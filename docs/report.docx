@@ -1,0 +1,164 @@
+📄 ROUND ROBIN CPU SCHEDULING REPORT
+
+Project Title:  Round Robin CPU Scheduling Simulator in C
+
+Course: Operating Systems
+
+Group Members: Abebaye
+               Hemen
+               kaleab
+               Nanat
+               Tsion Tibebe
+
+
+
+ 1. INTRODUCTION
+
+CPU scheduling is an important concept in operating systems that determines how processes are executed by the CPU.
+
+The Round Robin scheduling algorithm is one of the simplest and most widely used CPU scheduling techniques. It assigns a fixed time quantum to each process in a circular order, ensuring fair CPU allocation among all processes.
+
+This project simulates the Round Robin scheduling algorithm using the C programming language and calculates important performance metrics.
+
+
+2. OBJECTIVES
+
+The main objectives of this project are:
+
+To implement Round Robin CPU scheduling
+To simulate process execution using time quantum
+To handle process arrival times and CPU idle conditions
+To calculate performance metrics
+To display results using Gantt chart visualization
+
+
+ 3. SYSTEM DESIGN (MODULE DESCRIPTION)
+
+The system is divided into four main modules:
+
+3.1 Input Module
+
+Responsible for:
+
+Accepting number of processes
+Reading arrival time, burst time, and priority
+Validating input values
+Storing data in process structures
+
+
+3.2 Scheduler Module
+
+Responsible for:
+
+Implementing Round Robin algorithm
+Managing ready queue
+Handling process execution
+Tracking CPU idle time
+Generating execution order (Gantt chart data)
+
+3.3 Metrics Module
+
+Responsible for calculating:
+
+Turnaround Time (TAT)
+Waiting Time (WT)
+Response Time (RT)
+CPU Utilization
+Throughput
+
+
+3.4 Display Module
+
+Responsible for:
+
+Displaying process table
+Printing Gantt chart
+Showing performance summary
+
+ 4. ALGORITHM (ROUND ROBIN)
+
+The Round Robin algorithm works as follows:
+
+Processes are added to a ready queue based on arrival time
+Each process is assigned a fixed time quantum
+The CPU executes each process for the given quantum
+If a process is not completed, it is placed back into the queue
+The process repeats until all processes are completed
+
+ Formulas Used
+
+Turnaround Time (TAT) = Completion Time − Arrival Time
+Waiting Time (WT) = Turnaround Time − Burst Time
+Response Time (RT) = First Execution − Arrival Time
+CPU Utilization = (Busy Time / Total Time) × 100
+Throughput = Number of Processes / Total Time
+
+🧪 5. TESTING
+
+The system was tested using different scenarios:
+
+
+ 5.1 Small Input Test
+Single process was tested
+Verified correct execution without context switching
+
+ 5.2 Large Input Test
+Multiple processes were tested
+Verified fair CPU allocation using Round Robin
+
+5.3 Edge Case Testing
+Case 1: CPU Idle Time
+CPU remains idle when no process is available
+Verified correct idle handling
+Case 2: Same Arrival Time
+All processes arrive at time 0
+Verified fair rotation
+
+
+ 6. OUTPUT ANALYSIS
+
+The system produces:
+
+Process Table (CT, TAT, WT, RT)
+Gantt Chart visualization
+CPU Utilization percentage
+Throughput value
+Average performance metrics
+
+All outputs are correctly calculated and validated through test cases.
+
+ 7. SCREENSHOTS
+
+The following screenshots are included:
+
+Program menu interface
+Normal Round Robin execution
+CPU idle case
+Same arrival time case
+Final performance summary
+
+(Insert images from screenshots folder here)
+
+8. SAMPLE RESULTS
+
+The system successfully handled:
+
+Normal scheduling cases
+Single process execution
+CPU idle periods
+Equal arrival times
+
+CPU utilization reached up to 100% in normal cases and decreased during idle periods, which is expected behavior.
+
+9. CONCLUSION
+
+The Round Robin CPU Scheduling Simulator was successfully implemented in C.
+
+The system effectively demonstrates:
+
+Process scheduling fairness
+Time-sharing CPU execution
+Proper handling of edge cases
+Accurate performance metric calculation
+
+This project helps in understanding how operating systems manage CPU scheduling in real-world environments.
