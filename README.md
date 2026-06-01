@@ -85,17 +85,23 @@ The system was tested under various conditions to ensure reliability.
 
 Test Cases
 
-1. Small Inputs                                                  3. Edge Cases
+1. Small Inputs
+
+2. Edge Cases
    
-2. Large Inputs
+3. Large Inputs
 
                                      
 ⚡ Advantages of Round Robin Scheduling
 
 
-Fair CPU allocation                                                                            Eliminates starvation
+Fair CPU allocation 
 
-Good response time                                                                             Suitable for interactive systems
+Eliminates starvation
+
+Good response time 
+
+Suitable for interactive systems
 
 to understand and implement
 
@@ -105,9 +111,13 @@ to understand and implement
 Round Robin scheduling is widely used in:
 
 
-Operating Systems                                                                         Time-Sharing Environments
+Operating Systems                                                                        
 
-Embedded Systems                                                                           Process Management Systems
+Time-Sharing Environments
+
+Embedded Systems                                                                           
+
+Process Management Systems
 
 CPU Task Scheduling
 
