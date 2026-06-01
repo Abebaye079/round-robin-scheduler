@@ -146,7 +146,6 @@ The Round Robin CPU Scheduling Simulator successfully demonstrates how operating
 The project combines theoretical Operating System concepts with practical programming implementation, providing valuable insight into process scheduling, CPU utilization, and performance evaluation.
 
 
-🙏 Thank You
 
 Course: Operating Systems
 
