@@ -22,7 +22,7 @@ int main()
     float avgWT, avgTAT, avgRT;
     calculateAverages(processes, n, &avgWT, &avgTAT, &avgRT);
 
-    int totalExecutionTime = processes[n-1].completionTime;
+    int totalExecutionTime = getTotalExecutionTime(processes, n);
     float cpuUtil = calculateCPUUtilization(processes, n, totalExecutionTime);
     float throughput = calculateThroughput(n, totalExecutionTime);
 
