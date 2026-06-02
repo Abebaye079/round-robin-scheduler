@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "display.h"
 
+// Prints process information table
 void printTable(Process processes[], int n)
 {
     printf("\n");
@@ -22,6 +23,7 @@ void printTable(Process processes[], int n)
     printf("================================================================================\n");
 }
 
+// Prints Gantt chart of process execution
 void printGanttChart(GanttEvent gantt[], int count)
 {
     printf("\nGantt Chart:\n");
@@ -48,6 +50,7 @@ void printGanttChart(GanttEvent gantt[], int count)
     printf("\n");
 }
 
+// Prints average performance metrics
 void printSummary(float avgWT, float avgTAT, float avgRT, float cpuUtil, float throughput)
 {
     printf("\n========== PERFORMANCE SUMMARY ==========\n");
